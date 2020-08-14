@@ -1,0 +1,18 @@
+type Pessoa {
+  id: ID!
+  nome: String!
+  ativo: Boolean!
+  email: String!
+  role: String!
+}
+
+type Query {
+  pessoas: [Pessoa!]!
+  pessoa(id: ID!): Pessoa!
+}
+
+type Mutation {
+  adicionarPessoa(nome: String!, ativo: Boolean!, email: String!, role: String!): Pessoa!
+  atualizarPessoa(id: ID!, nome: String!, ativo: Boolean!, email: String!, role: String!): Pessoa!
+
+}
