@@ -12,7 +12,8 @@ type Query {
 }
 
 type Mutation {
-  adicionarPessoa(nome: String!, ativo: Boolean!, email: String!, role: String!): Pessoa!
-  atualizarPessoa(id: ID!, nome: String!, ativo: Boolean!, email: String!, role: String!): Pessoa!
+  adicionaPessoa(nome: String!, ativo: Boolean!, email: String!, role: String!): Pessoa!
+  atualizaPessoa(id: ID!, nome: String!, ativo: Boolean!, email: String!, role: String!): Pessoa!
+  deletaPessoa(id: ID!): ID!
 
 }

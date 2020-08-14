@@ -7,12 +7,10 @@ const resolvers = {
     pessoa: (root, { id }) => pessoas.buscaPessoaPorId(id)
   },
   Mutation: {
-    adicionarPessoa: (root, args) => pessoas.adicionaPessoa(args),
-    atualizarPessoa: (root, args) => pessoas.atualizaPessoa(args)
+    adicionaPessoa: (root, args) => pessoas.adicionaPessoa(args),
+    atualizaPessoa: (root, args) => pessoas.atualizaPessoa(args),
+    deletaPessoa: (root, { id }) => pessoas.deletaPessoa(id)
   }
 }
 
 module.exports = resolvers
-
-//   atualizarCliente: (root, params) => Clientes.atualiza(params),
-//   deletarCliente: (root, { id }) => Clientes.deleta(id)
