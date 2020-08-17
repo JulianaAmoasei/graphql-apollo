@@ -1,0 +1,18 @@
+type Turma {
+  id: ID!
+  data_inicio: String!
+  nivel: Nivel!
+  docente: Pessoa!
+}
+
+type Query {
+  turmas: [Turma!]!
+  turma(id: ID!): Turma!
+}
+
+type Mutation {
+  adicionaTurma(dataInicio: String!, nivelId: Int!, docenteId: Int!): Turma!
+  atualizaTurma(id: ID!, dataInicio: String!, nivelId: Int!, docenteId: Int!): Turma!
+  deletaTurma(id: ID!): ID!
+
+}
