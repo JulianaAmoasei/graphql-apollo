@@ -1,9 +1,9 @@
 const ModeloPessoas = require('./PessoasModel')
-// const ModeloTurmas = require('./TurmasModel')
+const ModeloTurmas = require('./TurmasModel')
 const ModeloNiveis = require('./NiveisModel')
 
 module.exports = {
   ModeloPessoas: ModeloPessoas,
-  // ModeloTurmas: ModeloTurmas,
+  ModeloTurmas: ModeloTurmas,
   ModeloNiveis: ModeloNiveis
 }

@@ -1,6 +1,6 @@
 type Turma {
   id: ID!
-  data_inicio: String!
+  dataInicio: String!
   nivel: Nivel!
   docente: Pessoa!
 }

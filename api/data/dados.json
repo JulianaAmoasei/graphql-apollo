@@ -2,27 +2,19 @@
   "niveis": [
     {
       "id": 1,
-      "descr_nivel": "básico",
-      "createdAt": "2020-07-17T02:39:21.000Z",
-      "updatedAt": "2020-07-17T02:39:21.000Z"
+      "descrNivel": "básico"
     },
     {
       "id": 2,
-      "descr_nivel": "intermediário",
-      "createdAt": "2020-07-17T02:39:21.000Z",
-      "updatedAt": "2020-07-17T02:39:21.000Z"
+      "descrNivel": "intermediário"
     },
     {
       "id": 3,
-      "descr_nivel": "avançado",
-      "createdAt": "2020-07-17T02:39:21.000Z",
-      "updatedAt": "2020-07-17T02:39:21.000Z"
+      "descrNivel": "avançado"
     },
     {
       "id": 4,
-      "descr_nivel": "conversações",
-      "createdAt": "2020-07-29T15:06:54.000Z",
-      "updatedAt": "2020-07-29T15:07:33.000Z"
+      "descrNivel": "conversações"
     }
   ],
   "pessoas": [
@@ -46,48 +38,64 @@
       "ativo": true,
       "email": "fo@fo.com",
       "role": "estudante"
+    },
+    {
+      "id": 6,
+      "nome": "Girafales",
+      "ativo": true,
+      "email": "fo@fo.com",
+      "role": "docente"
+    },
+    {
+      "id": 7,
+      "nome": "Pardal",
+      "ativo": true,
+      "email": "fo@fo.com",
+      "role": "docente"
     }
   ],
   "turmas": [
     {
       "id": 1,
-      "data_inicio": "2020-02-01",
-      "nivel_id": 1,
-      "docente_id": 6,
-      "createdAt": "2020-07-17T02:39:21.000Z",
-      "updatedAt": "2020-07-17T02:39:21.000Z"
+      "dataInicio": "2020-02-01",
+      "nivelId": 1,
+      "docenteId": 6
     },
     {
       "id": 2,
-      "data_inicio": "2020-02-01",
-      "nivel_id": 2,
-      "docente_id": 5,
-      "createdAt": "2020-07-17T02:39:21.000Z",
-      "updatedAt": "2020-07-17T02:39:21.000Z"
+      "dataInicio": "2020-02-01",
+      "nivelId": 2,
+      "docenteId": 7
     },
     {
       "id": 3,
-      "data_inicio": "2020-02-01",
-      "nivel_id": 3,
-      "docente_id": 6,
-      "createdAt": "2020-07-17T02:39:21.000Z",
-      "updatedAt": "2020-07-17T02:39:21.000Z"
+      "dataInicio": "2020-02-01",
+      "nivelId": 3,
+      "docenteId": 6
     },
     {
       "id": 4,
-      "data_inicio": "2020-07-01",
-      "nivel_id": 3,
-      "docente_id": 6,
-      "createdAt": "2020-07-17T02:39:21.000Z",
-      "updatedAt": "2020-07-17T02:39:21.000Z"
+      "dataInicio": "2020-07-01",
+      "nivelId": 3,
+      "docenteId": 6
     },
     {
       "id": 5,
-      "data_inicio": "2020-05-15",
-      "nivel_id": 1,
-      "docente_id": 5,
-      "createdAt": "2020-07-29T15:15:05.000Z",
-      "updatedAt": "2020-07-29T15:15:32.000Z"
+      "dataInicio": "2020-05-15",
+      "nivelId": 1,
+      "docenteId": 7
+    },
+    {
+      "id": 1597713534139,
+      "dataInicio": "2020-08-01",
+      "nivelId": 1,
+      "docenteId": 7
+    },
+    {
+      "id": 1597713585612,
+      "dataInicio": "2020-09-01",
+      "nivelId": 2,
+      "docenteId": 7
     }
   ]
 }
