@@ -5,49 +5,42 @@
       "nome": "Juliana",
       "ativo": true,
       "email": "ju@ju.com",
-      "role": "estudante"
+      "role": 1
     },
     {
       "id": 3,
       "nome": "Fordinho Fofo",
       "ativo": true,
       "email": "fo@fo.com",
-      "role": "estudante"
+      "role": 1
     },
     {
       "id": 5,
       "nome": "Fordinho Fofo",
       "ativo": true,
       "email": "fo@fo.com",
-      "role": "estudante"
+      "role": 1
     },
     {
       "id": 6,
       "nome": "Girafales",
       "ativo": true,
       "email": "fo@fo.com",
-      "role": "docente"
+      "role": 2
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "type": "estudante"
     },
     {
-      "id": 7,
-      "nome": "Pardal",
-      "ativo": true,
-      "email": "fo@fo.com",
-      "role": "docente"
+      "id": 2,
+      "type": "docente"
     },
     {
-      "id": 8,
-      "nome": "Juju",
-      "ativo": true,
-      "email": "j@j.com",
-      "role": "docente"
-    },
-    {
-      "nome": "Juju",
-      "ativo": true,
-      "email": "j@j.com",
-      "role": "docente",
-      "id": 9
+      "id": 3,
+      "type": "coordenação"
     }
   ]
 }
