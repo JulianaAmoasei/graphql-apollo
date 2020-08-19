@@ -1,23 +1,5 @@
 {
-  "niveis": [
-    {
-      "id": 1,
-      "descrNivel": "básico"
-    },
-    {
-      "id": 2,
-      "descrNivel": "intermediário"
-    },
-    {
-      "id": 3,
-      "descrNivel": "avançado"
-    },
-    {
-      "id": 4,
-      "descrNivel": "conversações"
-    }
-  ],
-  "pessoas": [
+  "users": [
     {
       "id": 2,
       "nome": "Juliana",
@@ -52,50 +34,20 @@
       "ativo": true,
       "email": "fo@fo.com",
       "role": "docente"
-    }
-  ],
-  "turmas": [
-    {
-      "id": 1,
-      "dataInicio": "2020-02-01",
-      "nivelId": 1,
-      "docenteId": 6
     },
     {
-      "id": 2,
-      "dataInicio": "2020-02-01",
-      "nivelId": 2,
-      "docenteId": 7
+      "id": 8,
+      "nome": "Juju",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": "docente"
     },
     {
-      "id": 3,
-      "dataInicio": "2020-02-01",
-      "nivelId": 3,
-      "docenteId": 6
-    },
-    {
-      "id": 4,
-      "dataInicio": "2020-07-01",
-      "nivelId": 3,
-      "docenteId": 6
-    },
-    {
-      "id": 5,
-      "dataInicio": "2020-05-15",
-      "nivelId": 1,
-      "docenteId": 7
-    },
-    {
-      "id": 1597713534139,
-      "dataInicio": "2020-08-01",
-      "nivelId": 1,
-      "docenteId": 7
-    },
-    {
-      "id": 1597713585612,
-      "dataInicio": "2020-09-01",
-      "nivelId": 2,
-      "docenteId": 7
+      "nome": "Juju",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": "docente",
+      "id": 9
     }
   ]
 }

@@ -1,0 +1,18 @@
+type User {
+  id: ID!
+  nome: String!
+  ativo: Boolean!
+  email: String!
+  role: String!
+}
+
+type Query {
+  users: [User!]!
+  user(id: ID!): User!
+}
+
+type Mutation {
+  adicionaUser(nome: String!, ativo: Boolean!, email: String!, role: String!): User!
+  atualizaUser(id: ID!, nome: String!, ativo: Boolean!, email: String!, role: String!): User!
+  removeUser(id: ID!): ID!
+}
