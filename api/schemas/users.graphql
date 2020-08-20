@@ -12,9 +12,9 @@ type Role {
 }
 
 enum RolesType {
-  estudante
-  docente
-  coordenacao
+  ESTUDANTE
+  DOCENTE
+  COORDENACAO
 }
 
 type Query {
@@ -23,7 +23,18 @@ type Query {
 }
 
 type Mutation {
-  adicionaUser(nome: String!, ativo: Boolean!, email: String!, role: RolesType!): User!
+  adicionaUser(user: UserInput): User!
   atualizaUser(id: ID!, nome: String!, ativo: Boolean!, email: String!, role: RolesType!): User!
   removeUser(id: ID!): ID!
 }
+
+# Input types can't have fields that are other objects, only basic scalar types, list types, and other input types.
+
+input UserInput {
+  nome: String
+  ativo: Boolean
+  email: String
+  role: RolesType
+}
+
+# Do not use the same input type for both queries and mutations. In many cases, arguments that are required for a mutation are optional for a corresponding query.

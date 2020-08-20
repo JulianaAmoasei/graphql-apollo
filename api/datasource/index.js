@@ -23,6 +23,7 @@ class UsersAPI extends RESTDataSource {
   }
 
   async adicionaUser(user) {
+    user.id = Date.now()
     const role = await this.get(`roles?type=${user.role}`)
     await this.post(`users`, { ...user, role: role[0].id })
     return ({

@@ -27,20 +27,202 @@
       "ativo": true,
       "email": "fo@fo.com",
       "role": 2
+    },
+    {
+      "nome": "Churrumina",
+      "ativo": true,
+      "email": "ch@ch.com",
+      "role": 2,
+      "id": 1597866978569
+    },
+    {
+      "id": 1597867032555,
+      "nome": "Churrumina",
+      "ativo": true,
+      "email": "ch@ch.com",
+      "role": 2
+    },
+    {
+      "id": 1597867062059,
+      "nome": "Churrumina",
+      "ativo": true,
+      "email": "ch@ch.com",
+      "role": 2
+    },
+    {
+      "id": 1597867133462,
+      "nome": "Churrumina",
+      "ativo": true,
+      "email": "ch@ch.com",
+      "role": 2
+    },
+    {
+      "id": 1597867144232,
+      "nome": "Churrumina",
+      "ativo": true,
+      "email": "ch@ch.com",
+      "role": 2
+    },
+    {
+      "id": 1597867182813,
+      "nome": "Churrumina",
+      "ativo": true,
+      "email": "ch@ch.com",
+      "role": 2
+    },
+    {
+      "id": 1597867248132,
+      "nome": "Churrumina",
+      "ativo": true,
+      "email": "ch@ch.com",
+      "role": 2
+    },
+    {
+      "id": 1597887937293,
+      "nome": "Juliana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1
+    },
+    {
+      "id": 1597887971683,
+      "nome": "Juliana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1
+    },
+    {
+      "nome": "Juliana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890004170
+    },
+    {
+      "nome": "Juliana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890059246
+    },
+    {
+      "nome": "Julsssiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890070269
+    },
+    {
+      "nome": "Julijiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890128454
+    },
+    {
+      "nome": "Julijiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890161003
+    },
+    {
+      "nome": "Julijiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890413369
+    },
+    {
+      "nome": "Julijiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890421653
+    },
+    {
+      "nome": "Julijiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890476268
+    },
+    {
+      "nome": "Jiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890491955
+    },
+    {
+      "nome": "Jiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890520925
+    },
+    {
+      "nome": "Jiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890684174
+    },
+    {
+      "nome": "Jiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890684211
+    },
+    {
+      "nome": "Jiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890728761
+    },
+    {
+      "nome": "Jiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890732077
+    },
+    {
+      "nome": "Jiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890740844
+    },
+    {
+      "nome": "Jiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597890740880
+    },
+    {
+      "nome": "Jiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "id": 1597891013491
     }
   ],
   "roles": [
     {
       "id": 1,
-      "type": "estudante"
+      "type": "ESTUDANTE"
     },
     {
       "id": 2,
-      "type": "docente"
+      "type": "DOCENTE"
     },
     {
       "id": 3,
-      "type": "coordenação"
+      "type": "COORDENACAO"
     }
   ]
 }
