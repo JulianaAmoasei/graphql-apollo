@@ -1,18 +1,12 @@
 const resolvers = {
   Query: {
-    users: (root, _, { dataSources }) => dataSources.usersAPI.getUsers(),
-    user: (root, { id }, { dataSources }) => dataSources.usersAPI.getUserById(id)
+    users: (_, __, { dataSources }) => dataSources.usersAPI.getUsers(),
+    user: (_, { id }, { dataSources }) => dataSources.usersAPI.getUserById(id)
   },
   Mutation: {
-    adicionaUser: async (root, args, { dataSources }) => {
-      args = await JSON.parse(JSON.stringify(args))
-      return dataSources.usersAPI.adicionaUser(args.user)
-    },
-    atualizaUser: async (root, args, { dataSources }) => {
-      args = await JSON.parse(JSON.stringify(args))
-      return dataSources.usersAPI.atualizaUser(args)
-    },
-    removeUser: (root, { id }, { dataSources }) => dataSources.usersAPI.removeUser(id)
+    adicionaUser: async (_, { user }, { dataSources }) => dataSources.usersAPI.adicionaUser(user),
+    atualizaUser: async (_, args, { dataSources }) => dataSources.usersAPI.atualizaUser(args),
+    removeUser: (_, { id }, { dataSources }) => dataSources.usersAPI.removeUser(id)
   }
 }
 

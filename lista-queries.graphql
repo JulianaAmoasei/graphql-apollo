@@ -1,0 +1,54 @@
+query {
+  users{
+    nome
+  }
+}
+
+query {
+  user(id: 2){
+    nome
+  }
+}
+
+mutation{
+  adicionaUser(user:{
+    nome: "Jiiana"
+    ativo: true
+    email: "j@j.com"
+    role: ESTUDANTE
+  }){
+    nome
+  }
+}
+
+mutation{
+  removeUser(id: 1597891013491)
+}
+
+mutation{
+  atualizaUser(id: 1597890728761, user:{
+    nome: "Jujujujujuju"
+    ativo: true
+    email: "j@j.com"
+    role: ESTUDANTE
+  }){
+    nome
+  }
+}
+
+#atualizaUser com nova response
+mutation{
+  atualizaUser(id: 1597890732077, user:{
+    nome: "Juju"
+    ativo: true
+    email: "j@j.com"
+    role: ESTUDANTE
+  }){
+    code
+    success
+    message
+    user {
+      nome
+    }
+  }
+}

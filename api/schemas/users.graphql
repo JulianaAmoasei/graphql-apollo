@@ -24,11 +24,13 @@ type Query {
 
 type Mutation {
   adicionaUser(user: UserInput): User!
-  atualizaUser(id: ID!, user: UserInput): User!
+  atualizaUser(id: ID!, user: UserInput): atualizaUserResposta!
   removeUser(id: ID!): ID!
 }
 
 # Input types can't have fields that are other objects, only basic scalar types, list types, and other input types.
+
+# Do not use the same input type for both queries and mutations. In many cases, arguments that are required for a mutation are optional for a corresponding query.
 
 input UserInput {
   nome: String
@@ -37,4 +39,15 @@ input UserInput {
   role: RolesType
 }
 
-# Do not use the same input type for both queries and mutations. In many cases, arguments that are required for a mutation are optional for a corresponding query.
+interface respostaCustom {
+  code: String!
+  success: Boolean!
+  message: String!
+}
+
+type atualizaUserResposta implements respostaCustom {
+  code: String!
+  success: Boolean!
+  message: String!
+  user: User
+}

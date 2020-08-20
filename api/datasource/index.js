@@ -4,6 +4,11 @@ class UsersAPI extends RESTDataSource {
   constructor() {
     super()
     this.baseURL = 'http://localhost:3000'
+    this.respostaCustom = {
+      code: "200",
+      success: true,
+      message: "mensagem de sucesso"
+    }
   }
 
   async getUsers() {
@@ -36,8 +41,11 @@ class UsersAPI extends RESTDataSource {
     const role = await this.get(`roles?type=${novosDados.user.role}`)
     await this.put(`users/${novosDados.id}`, { ...novosDados.user, role: role[0].id })
     return ({
+      ...this.respostaCustom,
+      user: {
       ...novosDados.user,
       role: role[0]
+      }
     })
   }
 
