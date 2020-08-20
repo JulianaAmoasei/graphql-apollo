@@ -76,6 +76,14 @@
       "email": "j@j.com",
       "role": 1,
       "id": 1597896966318
+    },
+    {
+      "nome": "Jiiana",
+      "ativo": true,
+      "email": "j@j.com",
+      "role": 1,
+      "createdAt": "2018-08-05T06:46:13.117Z",
+      "id": 1597940947753
     }
   ],
   "roles": [

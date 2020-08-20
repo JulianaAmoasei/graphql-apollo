@@ -1,9 +1,12 @@
+scalar DateTime
+
 type User {
   id: ID!
   nome: String!
   ativo: Boolean!
   email: String!
   role: Role!
+  createdAt: DateTime
 }
 
 type Role {
@@ -37,6 +40,7 @@ input UserInput {
   ativo: Boolean
   email: String
   role: RolesType
+  createdAt: DateTime
 }
 
 interface respostaCustom {
