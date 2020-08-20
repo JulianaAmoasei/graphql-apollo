@@ -24,7 +24,7 @@ type Query {
 
 type Mutation {
   adicionaUser(user: UserInput): User!
-  atualizaUser(id: ID!, nome: String!, ativo: Boolean!, email: String!, role: RolesType!): User!
+  atualizaUser(id: ID!, user: UserInput): User!
   removeUser(id: ID!): ID!
 }
 

@@ -8,7 +8,10 @@ const resolvers = {
       args = await JSON.parse(JSON.stringify(args))
       return dataSources.usersAPI.adicionaUser(args.user)
     },
-    atualizaUser: (root, args, { dataSources }) => dataSources.usersAPI.atualizaUser(args),
+    atualizaUser: async (root, args, { dataSources }) => {
+      args = await JSON.parse(JSON.stringify(args))
+      return dataSources.usersAPI.atualizaUser(args)
+    },
     removeUser: (root, { id }, { dataSources }) => dataSources.usersAPI.removeUser(id)
   }
 }
