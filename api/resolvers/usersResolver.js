@@ -1,4 +1,4 @@
-const { GraphQLScalarType } = require('graphql');
+const { GraphQLScalarType } = require('graphql')
 
 const resolvers = {
   // That’s the downside to using custom scalars. They’re not supported out of the box, we need to make our custom logic available to any projects that want to use them. 
@@ -11,7 +11,7 @@ const resolvers = {
   }),
   Query: {
     users: (_, __, { dataSources }) => dataSources.usersAPI.getUsers(),
-    user: (_, { id }, { dataSources }) => dataSources.usersAPI.getUserById(id)
+    user: (_, { id }, { dataSources }) => dataSources.usersAPI.getUserById(id),
   },
   Mutation: {
     adicionaUser: async (_, { user }, { dataSources }) => dataSources.usersAPI.adicionaUser(user),
