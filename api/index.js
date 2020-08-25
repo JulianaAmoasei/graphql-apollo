@@ -5,12 +5,16 @@ const path = require('path')
 const mergeGraphQLSchemas = require('merge-graphql-schemas')
 const { fileLoader, mergeTypes } = mergeGraphQLSchemas
 
-const arquivosSchemas = path.join(__dirname, './user/schemas')
-const arquivosSchemasCarregados = fileLoader(arquivosSchemas)
-const schemas = mergeTypes(arquivosSchemasCarregados)
+const schemas = (() => {
+  const arquivosSchemas = path.join(__dirname, './user/schemas')
+  const arquivosSchemasCarregados = fileLoader(arquivosSchemas)
+  return mergeTypes(arquivosSchemasCarregados)
+})()
 
-const arquivosResolvers = path.join(__dirname, './user/resolvers')
-const resolvers = fileLoader(arquivosResolvers)
+const resolvers = (() => {
+  const arquivosResolvers = path.join(__dirname, './user/resolvers')
+  return fileLoader(arquivosResolvers)
+})()
 
 const server = new ApolloServer({
   typeDefs: schemas,
