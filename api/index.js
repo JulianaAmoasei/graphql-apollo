@@ -1,5 +1,5 @@
 const { ApolloServer } = require('apollo-server')
-const UsersAPI = require('./datasource')
+const UsersAPI = require('./user/datasources')
 const typeDefs = require('./schemas')
 const resolvers = require('./resolvers')
 
@@ -12,8 +12,6 @@ const server = new ApolloServer({
     }
   },
 })
-
-// const server = new ApolloServer({ typeDefs, resolvers })
 
 server.listen().then(({ url }) => {
   console.log(`🚀 servidor servindo em ${url}`)
